@@ -1,6 +1,6 @@
 ARG REPO_LOCATION=icr.io/appc-dev/
 ARG BASE_VERSION=12.0.3.0-r2
-FROM ${REPO_LOCATION}ace-server/base:${BASE_VERSION}
+FROM icr.io/appc-dev/ace-server@sha256:9825171d021913063cf4f505acc093c83c616e3fea9b2b23ea97d27ebf59ad43
 USER root
 COPY bars_test /home/aceuser/bars
 RUN  chmod -R ugo+rwx /home/aceuser
